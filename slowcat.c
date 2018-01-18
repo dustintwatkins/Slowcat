@@ -6,8 +6,8 @@
 char *getenv(const char  *name);
 
 void inputToOutput(int time){
-	while(1){
-		char str[60];
+	char str[60];
+	while(fgets(str, 60, stdin)){
 		fgets(str, 60, stdin);
 		printf("%s", str);
 		sleep(time);
